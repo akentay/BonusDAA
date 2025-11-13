@@ -21,3 +21,12 @@ This demonstrates not only your MST implementation but also your ability to effi
 
 ## 🧩 Project Structure
 
+/src/com/aida/mst/
+│
+├── Main.java # Main file that reads JSON, runs Prim and Kruskal algorithms, and compares results
+├── Graph.java # Graph class that holds nodes and edges
+├── Edge.java # Edge class with 'from', 'to', and 'weight'
+├── Prim.java # Prim's algorithm implementation
+├── Kruskal.java # Kruskal's algorithm implementation
+├── UnionFind.java # Union-Find (Disjoint Set) helper class used in Kruskal’s algorithm
+└── input.json # Input data file containing graphs and their edges
