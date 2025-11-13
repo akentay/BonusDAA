@@ -82,3 +82,20 @@ Example of input file:
     }
   ]
 }
+
+🖥️ How to Run
+✅ Requirements
+
+Java 17+ (or any version that supports org.json)
+
+VS Code / IntelliJ IDEA / Command line
+
+org.json library in classpath (you can get it from Maven: org.json:json:20231013)
+
+▶️ Steps
+
+Clone the repository:
+
+git clone https://github.com/yourusername/MST-Project.git
+cd MST-Project
+
