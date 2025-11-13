@@ -122,3 +122,25 @@ Kruskal Total Cost: 7, Time: 0.07 ms
 
 
 If an edge is removed, the program identifies the disconnected components and suggests the best replacement edge to reconnect them.
+
+📊 Comparison
+Algorithm	Time (ms)	Total Cost	Approach
+Prim	0.12	7	Greedy from node
+Kruskal	0.07	7	Greedy on edges
+
+👩‍💻 Author
+
+Aida Kentay
+Software Engineering 
+
+🏁 Conclusion
+
+This project successfully demonstrates:
+
+Understanding of graph algorithms and MST theory
+
+Implementation of edge removal and replacement
+
+Practical comparison between Prim’s and Kruskal’s algorithms
+
+Efficient and well-structured Java code organization
