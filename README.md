@@ -99,3 +99,26 @@ Clone the repository:
 git clone https://github.com/yourusername/MST-Project.git
 cd MST-Project
 
+Make sure input.json is in the same folder as your Main.java.
+
+Compile:
+
+javac -cp .;json.jar com/aida/mst/*.java
+
+
+Run:
+
+java -cp .;json.jar com.aida.mst.Main
+
+🧾 Output Example
+Graph ID: 1
+Vertices: 4, Edges: 4
+Prim MST edges: [B-C(1), A-B(2), C-D(4)]
+Prim Total Cost: 7, Time: 0.12 ms
+
+Kruskal MST edges: [B-C(1), A-B(2), C-D(4)]
+Kruskal Total Cost: 7, Time: 0.07 ms
+-------------------------------------------------------
+
+
+If an edge is removed, the program identifies the disconnected components and suggests the best replacement edge to reconnect them.
