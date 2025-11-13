@@ -30,3 +30,55 @@ This demonstrates not only your MST implementation but also your ability to effi
 ├── Kruskal.java # Kruskal's algorithm implementation
 ├── UnionFind.java # Union-Find (Disjoint Set) helper class used in Kruskal’s algorithm
 └── input.json # Input data file containing graphs and their edges
+
+
+---
+
+## ⚙️ How It Works
+
+### Step 1: Build MST
+The program reads a graph from `input.json` and builds an MST using **Prim** and **Kruskal** algorithms.
+
+### Step 2: Display MST
+It prints out all edges included in both MSTs with their total weights and computation times.
+
+### Step 3: Remove an Edge
+You can simulate removing one edge from the MST to split the graph into two disconnected components.
+
+### Step 4: Reconnect Components
+The algorithm finds a **replacement edge** that reconnects the two components with **minimum additional cost** — keeping the tree minimal.
+
+---
+
+## 🧠 Algorithms Used
+
+### 🔹 Prim’s Algorithm
+- Starts from any node.
+- Always adds the smallest edge that connects the visited set with an unvisited node.
+- Uses a **Priority Queue** for efficient edge selection.
+
+### 🔹 Kruskal’s Algorithm
+- Sorts all edges by weight.
+- Adds edges one by one, skipping any that form a cycle.
+- Uses a **Union-Find (Disjoint Set)** structure to detect cycles efficiently.
+
+---
+
+## 📁 Input Format (`input.json`)
+
+Example of input file:
+```json
+{
+  "graphs": [
+    {
+      "id": 1,
+      "nodes": ["A", "B", "C", "D"],
+      "edges": [
+        {"from": "A", "to": "B", "weight": 2},
+        {"from": "A", "to": "C", "weight": 3},
+        {"from": "B", "to": "C", "weight": 1},
+        {"from": "C", "to": "D", "weight": 4}
+      ]
+    }
+  ]
+}
